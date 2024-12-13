@@ -9,3 +9,6 @@ const serverStar = server.listen(process.env.PORT, async (err) => {
     console.log(`server is running at http://localhost:${process.env.PORT}`);
   }
 });
+server.get("/",(req,res)=>{
+  res.send("Welcome to StoreFleet Project")
+})
